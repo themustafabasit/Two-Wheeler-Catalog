@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminModule_AdminMasterPage" %>
+
+<html>
+<head>
+       <link rel="stylesheet" href="../global/css/elements.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link rel="icon" href="../global/pictures/tab_logo.png">
+    <link rel="stylesheet" type="text/css" href="../global/css/master_nav.css">
+    <link rel="stylesheet" type="text/css" href="../global/css/master_footer.css">
+    <link media="screen and (min-width:1220px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_1200.css" />
+    <link media="screen and (min-width:1120px) and (max-width: 1219px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_1100.css" />
+    <link media="screen and (min-width:1020px) and (max-width: 1119px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_1000.css" />
+    <link media="screen and (min-width:720px) and (max-width: 1019px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_700.css" />
+    <link media="screen and (min-width:520px) and (max-width: 719px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_500.css" />
+    <link media="screen and (min-width:100px) and (max-width: 519px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_mobile.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+   
+        <div class="big_wrapper">
+            <div class="small_wrapper">
+                <div class="header_outter_wrapper">
+                    <div class="header_inner_wrapper">
+                        <div class="header_container">
+                            <div class="first_line">
+                                <div class="first_line_content_holder">
+                                    <div class="logo_container">
+                                        <a href="../AdminModule/AdminHomePage.aspx">
+                                            <img src="../global/pictures/logo.jpg" alt="shop online without any worry !">
+                                        </a>
+                                    </div>
+                                    <div class="top_cno_n_email">
+                                        <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"> Deals</asp:LinkButton></li>
+                                        <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click"> About</asp:LinkButton></li>
+                                        <li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click"> Contact</asp:LinkButton></li>
+                                        <li><asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">logout</asp:LinkButton></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second_line">
+                                <div class="second_line_content_holder">
+                                    <div class="anchor_holder">
+                                        <li class="first_li"><a href="AdminHomePage.aspx" class="first_li_anchor">Home</a></li>
+                                       <%-- <li class="first_li">
+                                            <a class="first_li_anchor  b_d_a">request/s</a>
+                                            <div class="dropdown medium_dropdown">
+                                                <div class="dropdown_content_holder">
+                                                    <a href="http://amarsinghcollege.ac.in/departments/department-of-botany/" class="dropdown_anchor">as a Dealer</a>
+                                                    <a href="http://amarsinghcollege.ac.in/departments/department-of-chemistry/" class="dropdown_anchor">as a User</a>
+                                                </div>
+                                            </div>
+                                        </li>--%>
+                                       
+                                        
+                                        <li class="first_li"><a href="PendingRegistration.aspx" class="first_li_anchor">requests</a></li>
+                                        <li class="first_li"><a href="AdminViewBookings.aspx" class="first_li_anchor">bookings</a></li>
+                                        <li class="first_li"><a href="VerifiedDealer.aspx" class="first_li_anchor">Dealers</a></li>
+                                        <li class="first_li"><a href="newsletter.aspx" class="first_li_anchor">newsletter</a></li>
+
+                                             <li class="first_li">
+                                            <a class="first_li_anchor   b_d_a">others</a>
+                                            <div class="dropdown large_dropdown">
+                                                <div class="dropdown_content_holder">
+                                                    <a href="AdminChangePassword.aspx" class="dropdown_anchor">change password</a>
+                                                    <a href="DeleteDealer.aspx" class="dropdown_anchor">Delete dealer</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                      <li class="first_li">
+                                            <a class="first_li_anchor  b_d_a">search</a>
+                                            <div class="dropdown more_than_small_dropdown">
+                                                <div class="dropdown_content_holder">
+                                                    <a href="AdminSearchProduct.aspx" class="dropdown_anchor">Product</a>
+                                                    <a href="AdminSearchDealer.aspx" class="dropdown_anchor">Dealer</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralMasterPage.master.cs" Inherits="GeneralModule_GeneralMasterPage" %>
+<html>
+
+<head>
+       <link rel="stylesheet" href="../global/css/elements.css" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link rel="icon" href="../global/pictures/tab_logo.png">
+    <link rel="stylesheet" type="text/css" href="../global/css/master_nav.css">
+    <link rel="stylesheet" type="text/css" href="../global/css/master_footer.css">
+    <link media="screen and (min-width:1220px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_1200.css" />
+    <link media="screen and (min-width:1120px) and (max-width: 1219px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_1100.css" />
+    <link media="screen and (min-width:1020px) and (max-width: 1119px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_1000.css" />
+    <link media="screen and (min-width:720px) and (max-width: 1019px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_700.css" />
+    <link media="screen and (min-width:520px) and (max-width: 719px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_500.css" />
+    <link media="screen and (min-width:100px) and (max-width: 519px) " rel="stylesheet" href="../global/css/master_config_nav_and_footer_for_mobile.css" />
+</head>
+<body>
+  <form runat="server">
+        <div class="big_wrapper">
+            <div class="small_wrapper">
+                <div class="header_outter_wrapper">
+                    <div class="header_inner_wrapper">
+                        
+                        <div class="header_container">
+                            <div class="first_line">
+                                <div class="first_line_content_holder">
+                                    <div class="logo_container">
+                                        <a href="../GeneralModule/generalhomepage.aspx">
+                                            <img src="../global/pictures/logo.jpg" alt="shop online without any worry !">
+                                        </a>
+                                    </div>
+                                   <%-- <div class="top_cno_n_email">
+                                        <li><a href="#">special offers</a></li>
+                                        <li><a href="#">register as a dealer</a></li>
+                                        <li><a href="#">register as a user</a></li>
+                                        <li><a href="login.aspx">login</a></li>
+                                    </div>--%>
+                                </div>
+                            </div>
+                            <div class="second_line">
+                                <div class="second_line_content_holder">
+                                    <div class="anchor_holder">
+                                        <li class="first_li"><a href="GeneralHomePage.aspx" class="first_li_anchor">Home</a></li>
+                                        <li class="first_li"><a href="DealerRegistration.aspx" class="first_li_anchor">dealer registration</a></li>
+                                        <li class="first_li"><a href="Bikes.aspx" class="first_li_anchor">bikes</a></li>
+                                        <li class="first_li"><a href="Scooties.aspx" class="first_li_anchor">scooties</a></li>
+                                        <li class="first_li"><a href="Search.aspx" class="first_li_anchor">search</a></li>
+                                        <li class="first_li"><a href="login.aspx" class="first_li_anchor">login</a></li>
+                                        <li class="first_li"><a href="AboutUs.aspx" class="first_li_anchor">about us</a></li> 
+                                         <li class="first_li"><a href="ContactUs.aspx" class="first_li_anchor">contact us</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+</form>
+</body>
+
+</html>
